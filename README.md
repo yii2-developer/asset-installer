@@ -16,3 +16,18 @@ or add
 ```
 
 to the require section of your `composer.json` file.
+
+Please see the README for composer/installers
+
+```json
+{
+    "extra": {
+        "installer-paths": {
+            "public/resources/{$vendor}/{$name}/": [
+                "type:bower-asset",
+                "type:npm-asset"
+            ]
+        }
+    }
+}
+```
